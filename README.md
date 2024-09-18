@@ -7,11 +7,11 @@ O objetivo principal é coletar, visualizar e enviar mensalmente por e-mail rela
 ## 🔍 Descrição do Projeto
 O projeto utiliza a biblioteca **Yahoo Finance** para obter dados diários dos índices financeiros e cria gráficos para ilustrar o desempenho de cada ativo ao longo de um período de 6 meses.
 
-Após a criação dos gráficos, eles são automaticamente enviados por email para o destinatário especificado. Esse envio ocorre com um relatório mensal anexado, tornando o processo automatizado e fácil de gerenciar.
+Após a criação dos gráficos, eles são automaticamente enviados por email para o destinatário especificado. Esse envio ocorre com um relatório anexado, tornando o processo automatizado e fácil de gerenciar.
 
 ## ⚙️ Funcionalidades
 - **Coleta de dados financeiros** de índices e ativos como IBOV, S&P 500 e BRL/USD.
-- **Criação de gráficos** detalhados do desempenho de cada ativo ao longo de um mês.
+- **Criação de gráficos** detalhados do desempenho de cada ativo ao longo do semestre.
 - **Envio automatizado de relatórios por email** com gráficos anexados para um destinatário pré-definido.
 
 ## 🛠️ Tecnologias Utilizadas
@@ -35,10 +35,11 @@ Ao final do processo, o projeto envia automaticamente um email contendo os gráf
 
 Exemplo de email enviado:
 
-- Assunto: Relatório Financeiro Mensal
-- Corpo do email: "Segue em anexo o relatório financeiro mensal."
+- Assunto: Panorama do Mercado Financeiro
+- Corpo do email: "Segue em anexo o relatório financeiro."
 - Anexos: Gráficos de desempenho de IBOV, S&P 500 e BRL/USD.
-![Gráfico IBOVESPA](imagens/email-exemplo.png)
+
+![Gráfico IBOVESPA](imagens/email-exemplo.jpeg)
 
 ## 📈 Exemplo de Gráficos
 O projeto gera gráficos com o estilo **cyberpunk** para representar o desempenho dos índices e ativos de forma visualmente atraente.
@@ -56,11 +57,11 @@ Exemplos de gráficos gerados:
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/projeto-financeiro.git
-cd projeto-financeiro
+git clone https://github.com/seu-usuario/projeto-analise-de-dados-financeiro.git
+cd projeto-analise-de-dados-financeiro
 ```
 
-2. Execute o script no terminal no ambiente linux(deve estar instalado o jupyter notebook):
+2. Execute o script no terminal no ambiente linux (deve estar instalado o jupyter notebook):
 
 ```bash
 
@@ -69,8 +70,8 @@ jupyter notebook projeto-email.ipynb
 ```
 Para agendar a execução mensal do script, utilize o Cron (em Linux/macOS) ou o Agendador de Tarefas (em Windows).
 
-## 📧 Configuração do Email
-No código Python, você deve configurar as informações de email:
+## 📧 Configuração do Email (Gmail, Outlook, Apple Mail)
+Dependendo do serviço de email que você está usando, configure os parâmetros de email como descrito abaixo.
 
 - Servidor SMTP
 - Porta
@@ -88,6 +89,9 @@ senha = "suasenha"
 destinatario = "destinatario@dominio.com"
 ```
 Certifique-se de alterar essas configurações para garantir que o email seja enviado corretamente.
+
+## 🔒 Notas Importantes:
+Se você ativou a autenticação em dois fatores na sua conta do Outlook ou iCloud, é necessário gerar uma senha de aplicativo para usar no script, assim como no Gmail. Sem isso, o script não conseguirá autenticar.
 
 ## 📅 Agendamento Automático
 Este projeto pode ser configurado para rodar automaticamente uma vez por mês utilizando:
