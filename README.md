@@ -1,4 +1,5 @@
-# Análise do Mercado de Ações com Notificação por Email(Gmail)
+![Análise do Mercado de Ações](imagens/mercado-financeiro.gif)
+
 
 Este projeto realiza a análise de dados financeiros de importantes índices e ativos, como o Índice Bovespa (IBOV), o S&P 500 e a taxa de câmbio BRL/USD. 
 
