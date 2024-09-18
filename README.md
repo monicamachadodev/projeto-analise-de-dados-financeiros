@@ -48,6 +48,9 @@ Exemplos de gráficos gerados:
 - Gráfico do S&P 500
 - Gráfico da taxa de câmbio BRL/USD
 
+![Gráfico IBOV](imagens/grafico_ibov.png)
+
+
 ## 🚀 Como Executar o Projeto
 1. Clone o repositório:
 
