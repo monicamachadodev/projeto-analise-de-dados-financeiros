@@ -38,6 +38,7 @@ Exemplo de email enviado:
 - Assunto: Relatório Financeiro Mensal
 - Corpo do email: "Segue em anexo o relatório financeiro mensal."
 - Anexos: Gráficos de desempenho de IBOV, S&P 500 e BRL/USD.
+![Gráfico IBOVESPA](imagens/email-exemplo.png)
 
 ## 📈 Exemplo de Gráficos
 O projeto gera gráficos com o estilo **cyberpunk** para representar o desempenho dos índices e ativos de forma visualmente atraente.
@@ -48,7 +49,7 @@ Exemplos de gráficos gerados:
 - Gráfico do S&P 500
 - Gráfico da taxa de câmbio BRL/USD
 
-![Gráfico IBOV](imagens/grafico_ibov.png)
+![Gráfico IBOVESPA](imagens/ibovespa.png)
 
 
 ## 🚀 Como Executar o Projeto
@@ -58,17 +59,12 @@ Exemplos de gráficos gerados:
 git clone https://github.com/seu-usuario/projeto-financeiro.git
 cd projeto-financeiro
 ```
-2. Instale as dependências necessárias:
 
-```bash
-pip install -r requirements.txt
-```
-
-3. Execute o script:
+2. Execute o script no terminal no ambiente linux(deve estar instalado o jupyter notebook):
 
 ```bash
 
-projeto-email.ipynb
+jupyter notebook projeto-email.ipynb
 
 ```
 Para agendar a execução mensal do script, utilize o Cron (em Linux/macOS) ou o Agendador de Tarefas (em Windows).
