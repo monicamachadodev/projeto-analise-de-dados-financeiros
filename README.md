@@ -6,13 +6,14 @@ Este projeto realiza a análise de dados financeiros de importantes índices e a
 > O objetivo principal é coletar, visualizar e enviar mensalmente por e-mail relatórios com o desempenho desses ativos.
 
 ## 🔍 Descrição do Projeto
-O projeto utiliza a biblioteca **Yahoo Finance** para obter dados diários dos índices financeiros e cria gráficos para ilustrar o desempenho de cada ativo ao longo de um período de 6 meses.
+O projeto utiliza a biblioteca **Yahoo Finance** para obter dados dos índices financeiros, cria gráficos para ilustrar o desempenho de cada ativo ao longo de um período e calcula o retorno atual de cada ativo.
 
-Após a criação dos gráficos, eles são automaticamente enviados por email para o destinatário especificado. Esse envio ocorre com um relatório anexado, tornando o processo automatizado e fácil de gerenciar.
+Após a criação dos gráficos e cálculo do retorno, eles são automaticamente enviados por email para o destinatário especificado. Esse envio ocorre com um relatório anexado, tornando o processo automatizado e fácil de gerenciar.
 
 ## 🔧 Funcionalidades
 - **Coleta de dados financeiros** de índices e ativos como IBOV, S&P 500 e BRL/USD.
 - **Criação de gráficos** detalhados do desempenho de cada ativo ao longo do semestre.
+- **Cálculo do retorno atual** dos principais ativos financeiros.
 - **Envio automatizado de relatórios por email** com gráficos anexados para um destinatário pré-definido.
 
 ## 📂 As principais bibliotecas usadas neste projeto incluem:
