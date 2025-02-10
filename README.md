@@ -94,7 +94,7 @@ jupyter notebook projeto-email.ipynb
 ```
 Para agendar a execução mensal do script, utilize o Cron (em Linux/macOS) ou o Agendador de Tarefas (em Windows).
 
-## 📧 Configuração de Email (Gmail, Outlook, Apple Mail)
+## Configuração de Email
 
 Servidores SMTP Comuns
 Aqui estão as configurações SMTP para alguns provedores de email populares:
