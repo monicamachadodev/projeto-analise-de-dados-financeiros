@@ -1,69 +1,82 @@
 ![Análise do Mercado de Ações](imagens/mercado-financeiro.gif)
 
-# Análise do Mercado de Ações com notificação por e-mail
-
-Este projeto realiza a análise de dados financeiros de importantes índices e ativos, como o Índice Bovespa (IBOV), o S&P 500 e a taxa de câmbio BRL/USD. 
+O projeto **Análise do Mercado de Ações com Relatório por E-mail** foi desenvolvido para fornecer uma solução automatizada para a análise e monitoramento de importantes índices e ativos financeiros, como o Índice Bovespa (IBOV), o S&P 500 e a taxa de câmbio BRL/USD.
 
 > O objetivo principal é coletar, visualizar e enviar mensalmente por e-mail relatórios com o desempenho desses ativos.
 
-## 🔍 Descrição do Projeto
-O projeto utiliza a biblioteca **Yahoo Finance** para obter dados dos índices financeiros, cria gráficos para ilustrar o desempenho de cada ativo ao longo de um período e calcula o retorno atual de cada ativo.
+Isso permite que investidores e entusiastas do mercado financeiro tenham acesso a informações atualizadas e visualmente atraentes sobre o desempenho desses índices e ativos.
 
-Após a criação dos gráficos e cálculo do retorno, eles são automaticamente enviados por email para o destinatário especificado. Esse envio ocorre com um relatório anexado, tornando o processo automatizado e fácil de gerenciar.
-
-## 🔧 Funcionalidades
-- **Coleta de dados financeiros** de índices e ativos como IBOV, S&P 500 e BRL/USD.
-- **Criação de gráficos** detalhados do desempenho de cada ativo ao longo do semestre.
-- **Cálculo do retorno atual** dos principais ativos financeiros.
-- **Envio automatizado de relatórios por email** com gráficos anexados para um destinatário pré-definido.
-
-## 📂 As principais bibliotecas usadas neste projeto incluem:
-- **Python 3.x**
-- **Yahoo Finance API (yfinance)**: Para obter dados financeiros.
-- **Pandas**: Para manipulação de dados.
-- **Matplotlib e mplcyberpunk**: Para visualização de dados e geração de gráficos estilizados.
-- **Smtplib**: Para o envio de emails com relatórios anexados.
-
-Você também pode instalá-las individualmente:
-```
-pip install yfinance pandas matplotlib mplcyberpunk
-```
-
-## 📊 Fontes de Dados
+## Fontes de Dados
 O projeto coleta os seguintes dados:
 
 1. **IBOV (Índice Bovespa)**: Desempenho do mercado de ações brasileiro.
 2. **S&P 500**: Um dos principais índices de ações dos Estados Unidos.
 3. **BRL/USD**: Cotação do câmbio Real/US Dollar.
 
-Esses dados são coletados diretamente do Yahoo Finance por meio da biblioteca `yfinance` em um intervalo de 6 meses e processados para gerar gráficos que mostram as flutuações de preço ao longo do semestre.
+### Funcionalidades Detalhadas:
+1. **Coleta de Dados Financeiros**
+   
+O projeto utiliza a biblioteca `yfinance` para coletar dados dos seguintes ativos:
 
-## ✉️ Relatório por Email
-Ao final do processo, o projeto envia automaticamente um email contendo os gráficos gerados como anexos. O relatório é enviado utilizando a biblioteca `smtplib`, e você pode configurar o destinatário e outros parâmetros diretamente no código.
+- IBOV (Índice Bovespa): Representa o desempenho do mercado de ações brasileiro.
 
-Exemplo de email enviado:
+- S&P 500: Um dos principais índices de ações dos Estados Unidos.
 
-- Assunto: Panorama do Mercado Financeiro
-- Corpo do email: "Segue em anexo o relatório financeiro."
-- Anexos: Gráficos de desempenho de IBOV, S&P 500 e BRL/USD.
+- BRL/USD: Taxa de câmbio entre o Real brasileiro e o Dólar americano.
 
-![Gráfico IBOVESPA](imagens/email-exemplo.jpeg)
+Os dados são coletados para um período de 6 meses por padrão, mas você pode ajustar o período no arquivo `config.py`.
 
-## 📈 Exemplo de Gráficos
-O projeto gera gráficos com o estilo `cyberpunk` para representar o desempenho dos índices e ativos de forma visualmente atraente.
-
-Exemplos de gráficos gerados:
+2. **Geração de Gráficos**
+   
+Os gráficos são gerados usando as bibliotecas `matplotlib` e `mplcyberpunk` para um estilo visual moderno e atraente. Os gráficos incluem:
 
 - Gráfico do Índice Bovespa (IBOV)
-- Gráfico do S&P 500
-- Gráfico da taxa de câmbio BRL/USD
 
+- Gráfico do S&P 500
+
+- Gráfico da Taxa de Câmbio BRL/USD
+
+Exemplo do gráfico:
 ![Gráfico IBOVESPA](imagens/ibovespa.png)
 
+Os gráficos são salvos e anexados ao email.
 
-## 🚀 Como Executar o Projeto
+3. **Cálculo de Retorno**
+   
+O projeto calcula o retorno percentual de cada ativo no período analisado. O retorno é exibido no corpo do email e pode ser usado para análises rápidas.
+
+4. **Envio de Relatório por Email**
+   
+O relatório é enviado automaticamente usando a biblioteca `smtplib`. O email inclui:
+
+Assunto: "Panorama do Mercado Financeiro"
+
+Corpo do Email: Resumo dos retornos e instruções para visualizar os gráficos.
+
+Anexos: Gráficos gerados em formato PNG.
+
+Exemplo:
+![Gráfico IBOVESPA](imagens/email-exemplo.jpeg)
+
+## Conclusão
+
+Ao finalizar a análise, você pode enviar automaticamente um email com os gráficos gerados anexados. O envio é realizado utilizando a biblioteca `smtplib`, e você pode personalizar facilmente o destinatário, o assunto, o corpo da mensagem e outros parâmetros diretamente no código. Essa funcionalidade garante que os relatórios sejam entregues de forma rápida e eficiente, sem necessidade de intervenção manual.
+
+## Tecnologias Utilizadas:
+- **Python 3.x:** Linguagem de programação principal.
+- **Yahoo Finance API (yfinance):** Para coleta de dados financeiros.
+- **Pandas:** Para manipulação e análise de dados.
+- **Matplotlib e mplcyberpunk:** Para criação de gráficos estilizados.
+- **Smtplib:** Para envio de e-mails com relatórios anexados.
+
+Você pode instalá-las com o seguinte comando:
+```
+pip install yfinance pandas matplotlib mplcyberpunk smtplib
+```
+
+## Como Executar o Projeto
 1. Clone o repositório:
-
+Primeiro, clone o repositório para o seu ambiente local:
 ~~~
 git clone https://github.com/seu-usuario/projeto-analise-de-dados-financeiro.git
 cd projeto-analise-de-dados-financeiro
@@ -79,34 +92,21 @@ jupyter notebook projeto-email.ipynb
 ```
 Para agendar a execução mensal do script, utilize o Cron (em Linux/macOS) ou o Agendador de Tarefas (em Windows).
 
-## 📧 Configuração do Email (Gmail, Outlook, Apple Mail)
-Dependendo do serviço de email que você está usando, configure os parâmetros de email como descrito abaixo.
+## 📧 Configuração de Email (Gmail, Outlook, Apple Mail)
 
-- Servidor SMTP
-- Porta
-- Usuário (seu email)
-- Senha
-- Destinatário do email
+Servidores SMTP Comuns
+Aqui estão as configurações SMTP para alguns provedores de email populares:
 
-**Exemplo:**
-
-```
-servidor = "smtp.seuprovedor.com"
-porta = 587
-usuario = "seuemail@dominio.com"
-senha = "suasenha"
-destinatario = "destinatario@dominio.com"
-```
-Certifique-se de alterar essas configurações para garantir que o email seja enviado corretamente.
+Provedor| Servidor SMTP| Porta|
+Gmail| smtp.gmail.com| 587|
+Outlook| smtp.office365.com| 587|
+Yahoo| smtp.mail.yahoo.com| 465|
 
 > [!IMPORTANT]
-> Se você ativou a autenticação em dois fatores na sua conta do **Outlook** ou **iCloud**, é necessário gerar uma senha de aplicativo para usar no script, assim como no **Gmail**. Sem isso, o script não conseguirá autenticar.
+> Se você usa autenticação em dois fatores, gere uma **senha de aplicativo** no seu provedor de email e use-a no campo `EMAIL_PASSWORD`.
 
-## 📅 Agendamento Automático
-Este projeto pode ser configurado para rodar automaticamente uma vez por mês utilizando:
-
-- Cron (Linux/macOS): Crie uma tarefa agendada que execute o script Python uma vez por mês.
-- Task Scheduler (Windows): Configure o Agendador de Tarefas para rodar o script mensalmente.
+## Agendamento Automático
+Para garantir que o relatório seja enviado mensalmente, configure o agendamento automático conforme descrito acima. Isso permite que você receba os relatórios sem precisar executar o script manualmente.
 
 ## 🤝 Contribuições
 
