@@ -14,6 +14,7 @@ O projeto coleta os seguintes dados:
 3. **BRL/USD**: Cotação do câmbio Real/US Dollar.
 
 ### Funcionalidades Detalhadas:
+
 1. **Coleta de Dados Financeiros**
    
 O projeto utiliza a biblioteca `yfinance` para coletar dados dos seguintes ativos:
@@ -62,7 +63,7 @@ Exemplo:
 
 ## Conclusão
 
-Ao finalizar a análise, você pode enviar automaticamente um email com os gráficos gerados anexados. O envio é realizado utilizando a biblioteca `smtplib`, e você pode personalizar facilmente o destinatário, o assunto, o corpo da mensagem e outros parâmetros diretamente no código. Essa funcionalidade garante que os relatórios sejam entregues de forma rápida e eficiente, sem necessidade de intervenção manual.
+O projeto oferece uma solução automatizada e eficiente para o monitoramento de importantes índices e ativos financeiros, eliminando a necessidade de intervenção manual, visualizações claras dos gráficos que facilitam a interpretação, permitindo a personalização de ativos e periodos de análise.
 
 ## Tecnologias Utilizadas:
 - **Python 3.x:** Linguagem de programação principal.
@@ -72,7 +73,8 @@ Ao finalizar a análise, você pode enviar automaticamente um email com os gráf
 - **Smtplib:** Para envio de e-mails com relatórios anexados.
 
 Você pode instalá-las com o seguinte comando:
-```
+
+```bash
 pip install yfinance pandas matplotlib mplcyberpunk smtplib
 ```
 
@@ -99,10 +101,11 @@ Para agendar a execução mensal do script, utilize o Cron (em Linux/macOS) ou o
 Servidores SMTP Comuns
 Aqui estão as configurações SMTP para alguns provedores de email populares:
 
-Provedor| Servidor SMTP| Porta|
-Gmail| smtp.gmail.com| 587|
-Outlook| smtp.office365.com| 587|
-Yahoo| smtp.mail.yahoo.com| 465|
+| Provedor   | Servidor SMTP       | Porta  |
+|------------|---------------------|--------|
+| Gmail      | smtp.gmail.com      | 587    |
+| Outlook    | smtp.office365.com  | 587    |
+| Yahoo      | smtp.mail.yahoo.com | 465    |
 
 > [!IMPORTANT]
 > Se você usa autenticação em dois fatores, gere uma **senha de aplicativo** no seu provedor de email e use-a no campo `EMAIL_PASSWORD`.
