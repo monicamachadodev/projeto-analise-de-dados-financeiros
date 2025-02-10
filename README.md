@@ -37,6 +37,7 @@ Os gráficos são gerados usando as bibliotecas `matplotlib` e `mplcyberpunk` pa
 - Gráfico da Taxa de Câmbio BRL/USD
 
 Exemplo do gráfico:
+
 ![Gráfico IBOVESPA](imagens/ibovespa.png)
 
 Os gráficos são salvos e anexados ao email.
@@ -56,6 +57,7 @@ Corpo do Email: Resumo dos retornos e instruções para visualizar os gráficos.
 Anexos: Gráficos gerados em formato PNG.
 
 Exemplo:
+
 ![Gráfico IBOVESPA](imagens/email-exemplo.jpeg)
 
 ## Conclusão
