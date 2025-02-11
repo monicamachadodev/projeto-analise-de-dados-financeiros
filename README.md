@@ -1,4 +1,4 @@
-![Análise do Mercado de Ações](imagens/mercado-financeiro.gif)
+![Análise do Mercado de Ações](imagens/relatorio-financeiro.gif)
 
 O projeto **Análise do Mercado de Ações com Relatório por E-mail** foi desenvolvido para fornecer uma solução automatizada para a análise e monitoramento de importantes índices e ativos financeiros, como o Índice Bovespa (IBOV), o S&P 500 e a taxa de câmbio BRL/USD.
 
